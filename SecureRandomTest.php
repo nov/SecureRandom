@@ -8,6 +8,20 @@ class SecureRandomTest extends PHPUnit_Framework_TestCase
         $this->custom_byte_length = SecureRandom::DEFAULT_BYTE_LENGTH * 2;
     }
 
+    /**
+     * @todo How to test?
+     */
+    function testOpenSSLNotFound() {
+        $this->markTestIncomplete('How to test?');
+    }
+
+    /**
+     * @todo How to test?
+     */
+    function testOpenSSLNotAvailable() {
+        $this->markTestIncomplete('How to test?');
+    }
+
     function testBytes() {
         $this->assetOutputLength(
             SecureRandom::bytes(),
